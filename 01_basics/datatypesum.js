@@ -90,9 +90,41 @@ let myobj = {
 
 //functions
 
-const myfunction = function(){
-    console.log("hello world");
-}
-//calling the function
-myfunction()
+// const myfunction = function(){
+//     console.log("hello world");
+// }
+// //calling the function
+// myfunction()
 
+
+
+
+
+//***********************MEMORIES****************
+
+//stack(primitive) , Heap (non premitive)
+//in stack you get the copy of it lets take a example
+// let myname ="sahil"
+// let myothername = myname
+// myname="sahil shetker"
+
+// console.log(myname);
+// console.log(myothername);
+//in this case we get 2 different outputs
+
+
+//for understanding heap non premitive types lets create a object
+
+let user = {
+    name:"raj", email:"raj@gmail.com", num:"454"
+}
+
+let user2 = user
+
+user2.name="sahil"
+
+console.log(user.name);
+console.log(user2.name);
+
+// in this case both the values are same because it use heap and non premitive
+// u get reference in heap and copy in stack
